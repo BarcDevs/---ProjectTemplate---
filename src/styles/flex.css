@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .flex--row {
+        @apply flex flex-row;
+    }
+
+    .flex--col {
+        @apply flex flex-col;
+    }
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .flex-row-center {
+        @apply flex items-center justify-center flex--row;
+    }
+
+    .flex-col-center {
+        @apply flex items-center justify-center flex-col;
+    }
+
+    .flex-center-between {
+        @apply flex items-center justify-between;
+    }
+
+    .flex-col-center-between {
+        @apply flex-col-center justify-between;
+    }
+
+    .flex-start-center {
+        @apply flex justify-start items-center;
+    }
+
+    .flex-start-between {
+        @apply flex justify-between items-start;
+    }
+
+    .flex-start-around {
+        @apply flex justify-around items-start;
+    }
+
+    .flex-row-between {
+        @apply flex flex--row justify-between;
+    }
+
+    .flex-col-start {
+        @apply flex flex-col items-start justify-start;
+    }
+
+    .flex-row-start {
+        @apply flex flex--row items-start justify-start;
+    }
+
+    .flex-responsive {
+        @apply flex flex--row max-sm:flex-col;
+    }
+
+    .flex-center-responsive {
+        @apply flex items-center justify-center max-sm:flex-col;
+    }
+
+    .flex-center-between-responsive {
+        @apply flex items-center justify-between max-sm:flex-col;
+    }
+
+    .flex-sm-col {
+        @apply max-sm:flex-col;
+    }
+
+    .inline-flex-center {
+        @apply inline-flex items-center justify-center;
+    }
+
+    .inline-flex-start {
+        @apply inline-flex items-start justify-start;
+    }
+}
