@@ -7,9 +7,9 @@ import airbnbConfig from 'eslint-config-airbnb'
 import prettierConfig from 'eslint-config-prettier'
 
 export default [
-    // js.configs.recommended,
-    // airbnbConfig,
-    // prettierConfig,
+    js.configs.recommended,
+    // airbnbConfig, // TODO: update plugin
+    prettierConfig,
     {
         files: ['**/*.ts'],
         languageOptions: {
@@ -22,9 +22,9 @@ export default [
             }
         },
         plugins: {
-            // prettier: eslintPluginPrettier,
-            // typescript: typescriptPlugin,
-            // node: nodePlugin
+            prettier: eslintPluginPrettier,
+            typescript: typescriptPlugin,
+            node: nodePlugin
         },
         rules: {
             'no-console': 'off',
@@ -36,9 +36,9 @@ export default [
             'import/prefer-default-export': 'off',
             'import/no-import-module-exports': 'off',
             'import/no-extraneous-dependencies': 'off',
-            // '@typescript-eslint/no-unused-vars': 'warn',
-            // '@typescript-eslint/no-shadow': 'warn',
-            // '@typescript-eslint/ban-ts-comment': 'off',
+            'typescript/no-unused-vars': 'warn',
+            'typescript/no-shadow': 'warn',
+            'typescript/ban-ts-comment': 'off',
         }
     }
 ]
